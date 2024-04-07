@@ -11,6 +11,7 @@ const port = process.env.PORT || 9000;
 app.use(cors());
 app.use(express.json());
 
+// Server url
 const uri = "mongodb+srv://aurthohinparvez2:Lp31ngSaPwngIi2g@cluster0.oap4niv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(uri, {
