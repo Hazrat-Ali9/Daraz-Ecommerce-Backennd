@@ -56,7 +56,7 @@ async function run() {
           const users = await cursor.toArray();
           res.send(users);
         });
-        
+        // Login 
         app.post("/login", async (req, res) => {
             const { username, password } = req.body;
             const user = await userCollection.findOne({ username });
