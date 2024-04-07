@@ -49,7 +49,7 @@ async function run() {
         //     const result = await userCollection.insertOne(newUser);
         //     res.send(result);
         // });
-
+// Register
         app.get("/register", async (req, res) => {
           const query = {};
           const cursor = userCollection.find(query);
