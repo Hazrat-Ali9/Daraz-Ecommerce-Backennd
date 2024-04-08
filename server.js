@@ -93,7 +93,7 @@ async function run() {
             }
         });
         
-        // Regular user dashboard
+        // Regular user Dashboard
         app.get("/user/dashboard", async (req, res) => {
             res.send("Welcome to user dashboard!");
         });
