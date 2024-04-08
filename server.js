@@ -86,7 +86,7 @@ async function run() {
         app.get("/vendor/dashboard", async (req, res) => {
             const { role } = req.body;
             if (role === 'vendor') {
-                // Access granted for vendor
+                // Access granted for Vendor
                 res.send("Welcome to vendor dashboard!");
             } else {
                 res.status(403).send("Access Forbidden");
