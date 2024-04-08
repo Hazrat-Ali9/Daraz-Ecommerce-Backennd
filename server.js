@@ -72,7 +72,7 @@ async function run() {
             }
         });
         
-        // Example usage of role-based authentication
+        // Example usage of role-based authentication User
         app.get("/admin/dashboard", async (req, res) => {
             const { role } = req.body;
             if (role === 'admin') {
