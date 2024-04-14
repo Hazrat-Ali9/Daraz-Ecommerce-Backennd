@@ -256,6 +256,8 @@ async function run() {
             res.send(result);
         });
 
+// get email
+
         app.get("/role/user/:email", async (req, res) => {
           const email = req.params.email
           const query = { email: email }
