@@ -62,6 +62,9 @@ async function run() {
               res.status(500).json({ message: 'Error submitting product.' });
             }
           });
+
+          // product added
+
           app.put('/product/:productId', async (req, res) => {
             const { productId } = req.params;
             const { category } = req.body;
