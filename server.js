@@ -46,7 +46,7 @@ async function run() {
             const result = await productCollection.findOne({ _id:new ObjectId(id) });
             res.send(result);
           });
-
+// Database connected 
           app.post('/product', async (req, res) => {
             const { name, description } = req.body;
             try {
