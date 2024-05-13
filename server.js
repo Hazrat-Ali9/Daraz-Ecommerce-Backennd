@@ -24,7 +24,7 @@ const upload = multer({ storage: storage });
 
 const uri =
   "mongodb+srv://aurthohinparvez2:Lp31ngSaPwngIi2g@cluster0.oap4niv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+// Client Server API
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
