@@ -50,7 +50,7 @@ async function run() {
       const products = await cursor.toArray();
       res.send(products);
     });
-    
+    // use param 
     app.get("/product/:id", async (req, res) => {
       const id = req.params.id;
       const result = await productCollection.findOne({ _id:new ObjectId(id) });
