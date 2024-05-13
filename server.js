@@ -43,7 +43,7 @@ async function run() {
       .db("roleProduct")
       .collection("allRoleProduct");
     const orderCollection = client.db("order").collection("allOrder");
-  
+  // app get
     app.get("/product", async (req, res) => {
       const query = {};
       const cursor = productCollection.find(query);
