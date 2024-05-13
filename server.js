@@ -32,6 +32,8 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+
+// Async Funtion
 async function run() {
   try {
     await client.connect();
